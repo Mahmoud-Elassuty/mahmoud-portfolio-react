@@ -233,7 +233,31 @@ html.modal-open { overflow: hidden; }
 .org-logo { position: relative; z-index: 2; } /* logo link stays clickable above the card hit-area */
 .org-logo.lg { width: 76px; height: 76px; }
 
+
 /* freelance logos */
-.fl__logo { width: 56px; height: 56px; border-radius: 16px; background: var(--paper); display: grid; place-items: center; padding: 8px; }
-.fl__logo img { width: 100%; height: 100%; object-fit: contain; }
-.fl__tag { margin-top: 4px; font: 600 11.5px var(--body); color: var(--gold); padding: 3px 10px; border: 1px solid var(--gold-soft); border-radius: 99px; }
+.fl__logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: #24151b;
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.fl__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fl__tag {
+  margin-top: 4px;
+  font: 600 11.5px var(--body);
+  color: var(--gold);
+  padding: 3px 10px;
+  border: 1px solid var(--gold-soft);
+  border-radius: 99px;
+}
+
