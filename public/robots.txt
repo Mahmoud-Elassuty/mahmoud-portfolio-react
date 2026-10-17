@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: /admin
 
-Sitemap: https://mahmoud-elassuty.github.io/Portfolio/sitemap.xml
+Sitemap: https://mahmoud-portfolio-react.vercel.app/sitemap.xml
