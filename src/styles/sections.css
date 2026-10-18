@@ -75,7 +75,7 @@ section[id], header[id], div[id] { scroll-margin-top: 16px; }
 .ct h2 { font-size: clamp(2rem, 5.2vw, 3.2rem); font-weight: 800; }
 .ct__intro p { margin: 10px 0 22px; color: #f6ebddcc; max-width: 40ch; }
 .ct__call { width: 100%; max-width: 360px; }
-.ct__form { display: grid; gap: 14px; align-content: start; }
+.ct__form { position: relative; display: grid; gap: 14px; align-content: start; min-width: 0; }
 .field { display: grid; gap: 6px; }
 .field label { font: 600 13px var(--body); color: var(--sand); letter-spacing: .01em; }
 .field input, .field textarea { width: 100%; background: #00000040; color: var(--paper); font: 400 16px var(--body); padding: 13px 14px; border: 0; border-bottom: 1.5px solid #d9b98b88; border-radius: 12px 12px 0 0; transition: border-color .25s, background .25s, box-shadow .25s; resize: vertical; min-height: 48px; }
@@ -100,7 +100,7 @@ section[id], header[id], div[id] { scroll-margin-top: 16px; }
 @media (max-width: 380px) { .dock { gap: 2px; padding: 5px; } .dock a { padding: 0 9px; font-size: 12px; } }
 @media (min-width: 768px) { .dock a { padding: 0 18px; font-size: 14px; } }
 
-.hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }
+.hp { position: absolute; inset-block-start: 0; inset-inline-start: 0; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .st--ok { color: #7be0a5; } .st--err { color: var(--danger); }
 .about__cv { margin-top: 22px; }
 .ct__cv { margin-top: 12px; width: 100%; max-width: 360px; }
@@ -260,4 +260,3 @@ html.modal-open { overflow: hidden; }
   border: 1px solid var(--gold-soft);
   border-radius: 99px;
 }
-
